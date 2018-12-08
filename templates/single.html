@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>AMDB</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/../static/images/1.png"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="../static/css/packages.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/st.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/default.css">
+</head>
+
+<!--Header-->
+<body class="sticky-menu">
+    <div id="loader">
+        <div class="loader-ring">
+          <div class="loader-ring-light"></div>
+          <div class="loader-ring-track"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+    <header id="header" class="menu-top-left">
+    <div class="container">
+        <div class="row">
+           <div class="col-md-6 col-sm-6 col-xs-4"></div>
+           <div class="col-md-3 col-md-offset-2 col-sm-6 col-xs-8 phl0">
+                <div class="header_author">
+                    <a href="index.html"><img src="../static/images/AMDB.jpeg" class="user" alt="user" height="50" width="100"> </a>
+                    
+                </div>
+                <a href="javascript:;" id="header-search"><i class="fa fa-search fa-2x" style="color: #ffffff;"></i></a>
+                <div class="button_container" id="toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                </div>
+                <div class="overlay" id="overlay">
+                    <a href="javascript:;" class="close-window"></a>
+                    <nav class="overlay-menu">
+                        <ul >
+                            <li ><a href="index.html">Home</a></li>
+                        </ul>
+                    </nav>
+                </div>            
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Movie Details -->
+<section class="section-content pv12 bg-cover"  data-bg-image="../static/images/blog/15.jpg" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <article class="blog-item single" >
+                    <div class="col-md-4 post-image hover-dark">
+                        {% for row in row0 %}
+                            <img src="{{ row[0] }}" height="665" width="380"/>
+                        {% endfor %}
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12 ph0">
+                        <div class="post-content bg-cover" data-bg-image="../static/images/blog/13.jpg">
+                            <div class="content-meta"> 
+                                <h4 class="entry-title">                
+                                <table>
+                                    {% for row in row1 %}
+                                    <tr>
+                                            <th> {{ row[0] }} </th>
+                                    </tr>
+                                    {% endfor %}
+                                </table>
+                                </h4>
+                                <div class="social-links">
+                                    <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                    <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                    <a href="javascript:;"><i class="fa fa-user"></i></a>
+                                </div>
+                            </div>
+                            <div> <strong style="color:white;">SYNOPSIS</strong></div>
+                            <div><strong class="entry-text" style="color:white; font-weight: bold;">
+                                <table style="margin-top:3%;">
+                                    {% for row in row2 %}
+                                        <tr>
+                                            <td style="margin-top:0%;"> {{ row[0] }} </td>
+                                        </tr>
+                                    {% endfor %}
+                                </table>  
+                            </strong></div>
+                            <div class="info-content">
+                                <ul class="item-info">
+                                    <li><span style="font-weight:600;">Running Time:</span> 
+                                        <strong style="color:white;">                                
+                                            <table>
+                                                {% for row in row3 %}
+                                                <tr>
+                                                        <td> {{ row[0] }} </td>
+                                                </tr>
+                                                {% endfor %}
+                                            </table>
+                                        </strong>
+                                    </li>
+                                    <li><span style="font-weight:600;">Genre:</span>  
+                                        <strong style="color:white;">                                
+                                            <table>
+                                                {% for row in row4 %}
+                                                <tr>
+                                                    <td> {{ row[0] }} </td>
+                                                </tr>
+                                                {% endfor %}
+                                            </table>
+                                        </strong>
+                                    </li>
+                                    <li><span style="font-weight:600;">Director:</span>                                        
+                                        <strong style="color:white;">                                
+                                            <table>
+                                                {% for row in row5 %}
+                                                <tr>
+                                                        <td> {{ row[0] }} </td>
+                                                </tr>
+                                                {% endfor %}
+                                            </table>
+                                        </strong>
+                                    </li>
+                                    <li><span style="font-weight:600;">Writer:</span>                                        
+                                        <strong style="color:white;">                                
+                                            <table>
+                                                {% for row in row6 %}
+                                                <tr>
+                                                        <td> {{ row[0] }} </td>
+                                                </tr>
+                                                {% endfor %}
+                                            </table>
+                                        </strong>
+                                    </li>
+                                    <li><span style="font-weight:600;">Release Date:</span>                                        
+                                        <strong style="color:white;">                                
+                                            <table>
+                                                {% for row in row7 %}
+                                                <tr>
+                                                        <td> {{ row[0] }} </td>
+                                                </tr>
+                                                {% endfor %}
+                                            </table>
+                                        </strong>
+                                    </li> 
+                                </ul>
+                                <div class="item-info-rate">
+                                    <div class="chart-cirle">
+                                        <div class="chart-circle-l" style="position:absolute;">
+                                            <div class="circle-chart" data-circle-width="10" data-percent="{{ 10 * rows[0][0] }}" data-text="{{ rows[0][0] }}">
+                                            </div>
+                                            <span>BLOCKBUSTER RATING</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                                <div class="content-footer"> 
+                                    <span>Available time:</span>
+                                    <ul class="mdate">
+                                        <li><a href="javascript:;"><i>16:40</i></a></li>
+                                        <li><a href="javascript:;"><i>18:10</i></a></li>
+                                        <li><a href="javascript:;"><i>20:20</i></a></li>
+                                        <li><a href="javascript:;"><i>21:20</i></a></li>
+                                    </ul>
+                                    <a href="#order" class="order_btn btn order text-right"> By ticket</a>
+                                </div>
+                            </div>
+                        </div>       
+                </article> 
+            </div> 
+        </div>
+    </div> 
+</section>
+
+<!--Movie-cast-->
+<div class="container">
+<h2 style="font-weight: bold; text-align: center; margin-top: 2%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif content:\f031;">MOVIE-STARS <i class="fa fa-star-o" style="color:gold;"></i><i class="fa fa-star-o"  style="color:gold;"></i></h2><br/>
+<div id="movie-cast" style="align-content: center; border-block-end-color:black; border-block-end-style: solid;">
+{% for i in range(row8|length) %}
+        <div class="col-sm-2">
+            <div class="gallery">
+            <img src="{{ row8[i] }}" width="200" height="150">
+            <div class="desc">
+                <h4 style="text-align:center; font-weight: bold; color: black;">{{ row9[i] }}</h4>
+                <h4 style="text-align:center;color:black;">as</h4>
+                <h4 style="text-align:center;color:black;">{{ row10[i] }}</h4>
+            </div>
+            </div>
+        </div>
+{% endfor %}
+<div class="clearfix"></div>
+</div>
+</div>
+
+  
+
+<!-- Reviews -->
+<div class="section-content pvb0">
+    <div class="container  pv8">
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="respond" class="comment-respond">
+                    <h2 id="reply-title" class="comment-reply-title" style="margin-bottom:0%;">Review</h2>
+                    <p style="text-align:end; margin-bottom:0%;">(Minimum 5 Characters Required)</p>
+                    <form id="commentform" class="comment-form" action="http://localhost:5000/single" method="POST">  
+                        <p class="comment-form-comment">
+                            <textarea id="comment" name="comment" placeholder="Write your Review" style="color:black; height: 100px;"></textarea>
+                        </p>
+                        <p class="form-submit">
+                            <button type="submit" name="submit1" value="submit" class="button fill rectangle">Submit</button>
+                        </p>                    
+                    </form>
+                </div>
+            </div> 
+            <div class="col-sm-4">
+                {% if p==1 %}
+                    {% if value == 5 %}
+                        <img src="../static/images/emotions/neutral.jpg" width="200" height="200">
+                    {% elif value > 5 %}
+                        <img src="../static/images/emotions/happy.jpg" width="200" height="200">
+                    {% else %}
+                        <img src="../static/images/emotions/sad.jpeg" width="200" height="200">
+                    {% endif %}
+                {% endif %}
+            </div>   
+            <div class="col-sm-4">
+                <div id="comments" class="comments-area">
+                    <div class="comments-wrapper">
+                        <h2 class="comments-title">Comments (2)</h2>
+                        <ol class="comment-list">
+                            <li>
+                                <article>
+                                    <div class="comment-avatar">
+                                        <img alt="Image" src="../static/images/thumbsup.jpeg" class="avatar">
+                                    </div>
+                                    <div class="comment-body">
+                                        <div class="meta-data">
+                                            <a href="#" class="comment-author">BEST REVIEW   <i class="fa fa-star" style="color:gold;"></i><i class="fa fa-star" style="color:gold;"></i><i class="fa fa-star" style="color:gold;"></i><i class="fa fa-star" style="color:gold;"></i><i class="fa fa-star" style="color:gold;"></i></a>
+                                        </div>
+                                        <div class="comment-content">
+                                            {{ pos }}
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <div class="comment-avatar">
+                                        <img alt="Image" src="../static/images/thumbsdown.png" class="avatar">
+                                    </div>
+                                    <div class="comment-body">
+                                        <div class="meta-data">
+                                            <a href="#" class="comment-author">WORST REVIEW   <i class="fa fa-star" style="color:gold;"></i><i class="fa fa-star-o" style="color:gold;"></i><i class="fa fa-star-o" style="color:gold;"></i><i class="fa fa-star-o" style="color:gold;"></i><i class="fa fa-star-o" style="color:gold;"></i></a>
+                                        </div>
+                                        <div class="comment-content">
+                                            {{ neg }}
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+             </div>   
+        </div>
+    </div>
+</div>
+
+<!-- Overlay Search -->
+    <div id="overlay-search">
+        <form method="POST" action="http://localhost:5000/single">
+            <input type="text" name="s" placeholder="Search..." autocomplete="off" style="color:black;">
+            <button type="submit" name='searchbar' value="">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+        <a href="javascript:;" class="close-window"></a>
+    </div>
+
+<!-- Footer -->
+<footer class="page-footer container-fluid text-right" style="padding:10px; background-color:#0c0c0c;">
+        <p class="love" style="font-weight:bold; color: #ffffff;">MADE WITH LOVE <i class="fa fa-heart" style="color:red;"></i></p>
+</footer>
+
+<!-- Include jQuery and Scripts -->
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/packages.min.js"></script>
+    <script type="text/javascript" src="../static/js/scripts.min.js"></script>
+
+</body>
+</html>

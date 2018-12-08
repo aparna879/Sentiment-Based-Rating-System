@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>AMDB</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/1.png"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="../static/css/packages.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/default.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/st.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+</head>
+
+<!-- Header -->
+<body class="sticky-menu">
+<header id="header" class="menu-top-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-4"></div>
+            <div class="col-md-3 col-md-offset-2 col-sm-6 col-xs-8 phl0">
+                <div class="header_author">
+                    <a href="#"><img src="../static/images/AMDB.jpeg" class="user" alt="user" height="50" width="100"> </a>
+                    <!-- <img src="../static/images/1.png" class="user" alt="user"> -->
+                </div>
+                <a href="javascript:;" id="header-search"><i class="fa fa-search fa-2x" style="color: #ffffff;"></i></a>
+                <!-- <div class="button_container" id="toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                </div> -->
+                <div class="overlay" id="overlay">
+                <a href="javascript:;" class="close-window"></a>
+                <nav class="overlay-menu">
+                    <ul >
+                        <li><a href="single.html">Single</a></li>
+                    </ul>
+                </nav>
+                </div>            
+            </div>
+        </div>
+    </div>
+    <!-- <div><form class="search1">
+            <input type="search" placeholder="Search">
+    </form></div> -->
+</header>
+
+<!-- Carousal-->
+
+<div class="fullwidth-slider">
+    <div id="headerslider" class="carousel slide"> 
+        <ol class="carousel-indicators">
+            <li data-target="#headerslider" data-slide-to="0" class="active"></li>
+            <li data-target="#headerslider" data-slide-to="1"></li>
+            <li data-target="#headerslider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="fill" data-bg-image="../static/images/11.jpg">
+                 <div class="bs-slider-overlay"></div>
+                    <div class="container movie-slider-container"> 
+                        <div class="row">
+                             <div class="col-sm-12 movie-slider-content"> 
+                                <div class="slider-content" ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" data-bg-image="../static/images/21.jpg">
+                 <div class="bs-slider-overlay"></div>
+                    <div class="container movie-slider-container"> 
+                        <div class="row">
+                             <div class="col-sm-12 movie-slider-content"> 
+                                <div class="slider-content" ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" data-bg-image="../static/images/18.jpg">
+                 <div class="bs-slider-overlay"></div>
+                    <div class="container movie-slider-container"> 
+                        <div class="row">
+                             <div class="col-sm-12 movie-slider-content"> 
+                                <div class="slider-content" ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="carousel-control left" href="#headerslider" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control right" href="#headerslider" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>  
+</div>
+ 
+<!-- Slider-->
+<div data-bg-image="static/images/bg3.jpg">
+<div class="row">
+    <div class="col-md-12 mt4">
+       <div class="single-slider">
+            <div class="swiper-container movie-../static/images" id="singleslider" data-col="5">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="movie-image" data-bg-image="../static/images/carousel/18.jpg">
+                                <div class="entry-hover">
+                                    <div class="entry-actions">
+                                        <a href="javascript:;" class="btn fill">Raazi</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="movie-image" data-bg-image="../static/images/carousel/19.jpg">
+                                <div class="entry-hover">
+                                    <div class="entry-actions">
+                                        <a href="javascript:;" class="btn fill">Pari</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="movie-image" data-bg-image="../static/images/carousel/20.jpg">
+                                <div class="entry-hover">
+                                    <div class="entry-actions">
+                                        <a href="javascript:;" class="btn fill">Sanju</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="movie-image" data-bg-image="../static/images/carousel/2.png">
+                                <div class="entry-hover">
+                                    <div class="entry-actions">
+                                        <a href="javascript:;" class="btn fill">Padman</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="movie-image" data-bg-image="../static/images/carousel/5.jpeg">
+                                <div class="entry-hover">
+                                    <div class="entry-actions">
+                                        <a href="javascript:;" class="btn fill">Black Panthar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="movie-image" data-bg-image="../static/images/24.jpg">
+                                <div class="entry-hover">
+                                    <div class="entry-actions">
+                                        <a href="javascript:;" class="btn fill">Thor</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</div>
+ 
+<!--Slider-->
+<div class="section-content pvb0 bg-cover" data-bg-image="static/images/bg3.jpg">
+    <div class="container pvt80">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="heading text-center" style="margin-top:0%;color:#ffffff;">Now playing</h3>
+				<div id="slider_coming" class="flexslider">
+				    <ul class="slides">
+                        <li>
+        				    <article class="product-item hover-dark">
+                                <div class="featured-image bg-cover">
+                                 	<img src="static/images/interstellar122.jpg" alt="image" />
+                                 	<a href="../static/video/interstellar.mp4" class="video-player"><i class="fa fa-play"></i></a>
+                                </div>
+                                <div class="entry-title">
+                                    <ul class="subtitle">
+                                        <li>Drama</li>
+                                        <li>Science Fiction</li>
+                                        <li>Mystery</li>
+                                    </ul>
+                                    <a href="javascript:;" class="title">INTERSTELLAR</a>
+                                    <div class="entry-date"><span>7 November 2014</span></div>
+                                    <div class="social-links">
+                                        <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                        <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                        <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="entry-desc">  
+                                    <div class="row mh0">
+                                        <div class="col-md-2 col-sm-3 col-xs-12 comming_movie ph0">
+                                            <img src="static/images/cooper.jpg" alt="movie">
+                                        </div>
+                                        <div class="col-md-8 col-sm-7 col-xs-12 entry-text phl3">
+                                            <h3>Synopsis</h3>
+                                            <p>In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home.</p>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                            <div class="wpc-skills animated">
+                                                <div class="skill-block">
+                                                    <h5 class="timer" data-to="90" data-speed="500">8.6 </h5>
+                                                    <h6> - IMDB</h6>
+                                                    <div class="skill-line">
+                                                        <div class="line-fill" data-width-pb="70%" style="width: 70%;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-block">
+                                                    <h5 class="timer" data-to="70" data-speed="500"> 7.0 </h5>
+                                                    <h6> - Rotten Tomatoes</h6>
+                                                    <div class="skill-line">
+                                                        <div class="line-fill" data-width-pb="56%" style="width: 56%;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-block">
+                                                    <h5 class="timer" data-to="80" data-speed="500"> 8.0 </h5>
+                                                    <h6> - Metacritic</h6>
+                                                    <div class="skill-line">
+                                                        <div class="line-fill" data-width-pb="56%" style="width: 56%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>           
+                                </div>        
+                            </article>
+    				    </li>
+                        <li>
+        				    <article class="product-item hover-dark">
+                                <div class="featured-image bg-cover">
+                                 	<img src="static/images/avatarr.jpeg" alt="image" />
+                                 	<a href="../static/video/avataar.mp4" class="video-player"><i class="fa fa-play"></i></a>
+                                </div>
+                                <div class="entry-title">
+                                    <ul class="subtitle">
+                                        <li>Fantasy</li>
+                                        <li>Science Fiction</li>
+                                    </ul>
+                                    <a href="javascript:;" class="title">AVATAR</a>
+                                    <div class="entry-date"><span>18 December 2009</span></div>
+                                    <div class="social-links">
+                                        <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                        <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                        <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="entry-desc">  
+                                    <div class="row mh0">
+                                        <div class="col-md-2 col-sm-3 col-xs-12 comming_movie ph0">
+                                            <img src="static/images/avatar.jpeg" alt="movie">
+                                        </div>
+                                        <div class="col-md-8 col-sm-7 col-xs-12 entry-text phl3">
+                                            <h3>Synopsis</h3>
+                                            <p>In the year 2154, a human colony has been established on a distant planet called Pandora. The humans are hunting for a rare mineral that could solve the ecological crisis on Earth. However, their plans are thwarted by an indigenous race called the Na'vi, whose village is resting right on top of the rare ore they need. To solve this problem, Col. Quaritch sends ex-Marine Jake Sully out into the wild piloting an Avatar- a remote control alien body that will allow Jake to breath the air on Pandora- to gain the Na'vi's trust and get them to relocate. As Jake discovers the new world of the Na'vi, he meets a beautiful Na'vi woman named Neytiri, who teaches him the values that her race shares. As Jake starts to see the world through her eyes, he realizes how much this new world matters to the Na'vi and to him and fights to protect his new race.</p>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                            <div class="wpc-skills animated">
+                                                <div class="skill-block">
+                                                    <h5 class="timer" data-to="80" data-speed="500">7.8 </h5>
+                                                    <h6> - IMDB</h6>
+                                                    <div class="skill-line">
+                                                        <div class="line-fill" data-width-pb="70%" style="width: 70%;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-block">
+                                                    <h5 class="timer" data-to="83" data-speed="500"> 8.3 </h5>
+                                                    <h6> - Rotten Tomatoes</h6>
+                                                    <div class="skill-line">
+                                                        <div class="line-fill" data-width-pb="56%" style="width: 56%;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-block">
+                                                    <h5 class="timer" data-to="80" data-speed="500"> 8.0 </h5>
+                                                    <h6> - Metacritic</h6>
+                                                    <div class="skill-line">
+                                                        <div class="line-fill" data-width-pb="56%" style="width: 56%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>           
+                                </div>        
+                            </article>
+                        </li>
+                        <li>
+                                <article class="product-item hover-dark">
+                                    <div class="featured-image bg-cover">
+                                         <img src="static/images/nun.jpg" alt="image" />
+                                         <a href="../static/video/nun.mp4" class="video-player"><i class="fa fa-play"></i></a>
+                                    </div>
+                                    <div class="entry-title">
+                                        <ul class="subtitle">
+                                            <li>Thriller</li>
+                                            <li>Mystery</li>
+                                        </ul>
+                                        <a href="javascript:;" class="title">THE NUN</a>
+                                        <div class="entry-date"><span>7 September 2018</span></div>
+                                        <div class="social-links">
+                                            <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                            <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                            <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="entry-desc">  
+                                        <div class="row mh0">
+                                            <div class="col-md-2 col-sm-3 col-xs-12 comming_movie ph0">
+                                                <img src="static/images/nunn.jpg" alt="movie">
+                                            </div>
+                                            <div class="col-md-8 col-sm-7 col-xs-12 entry-text phl3">
+                                                <h3>Synopsis</h3>
+                                                <p>When a young nun at a cloistered abbey in Romania takes her own life, a priest with a haunted past and a novitiate on the threshold of her final vows are sent by the Vatican to investigate. Together, they uncover the order's unholy secret. Risking not only their lives but their faith and their very souls, they confront a malevolent force in the form of a demonic nun.</p>
+                                            </div>
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="wpc-skills animated">
+                                                    <div class="skill-block">
+                                                        <h5 class="timer" data-to="80" data-speed="500">7.8 </h5>
+                                                        <h6> - IMDB</h6>
+                                                        <div class="skill-line">
+                                                            <div class="line-fill" data-width-pb="70%" style="width: 70%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill-block">
+                                                        <h5 class="timer" data-to="83" data-speed="500"> 8.3 </h5>
+                                                        <h6> - Rotten Tomatoes</h6>
+                                                        <div class="skill-line">
+                                                            <div class="line-fill" data-width-pb="56%" style="width: 56%;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill-block">
+                                                        <h5 class="timer" data-to="80" data-speed="500"> 8.0 </h5>
+                                                        <h6> - Metacritic</h6>
+                                                        <div class="skill-line">
+                                                            <div class="line-fill" data-width-pb="56%" style="width: 56%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>           
+                                    </div>        
+                                </article>
+                            </li>
+                            <li>
+                                <article class="product-item hover-dark">
+                                        <div class="featured-image bg-cover">
+                                             <img src="static/images/inceptionn.jpg" alt="image" />
+                                             <a href="../static/video/inception.mp4" class="video-player"><i class="fa fa-play"></i></a>
+                                        </div>
+                                        <div class="entry-title">
+                                            <ul class="subtitle">
+                                                <li>Thriller</li>
+                                                <li>Science-Fiction</li>
+                                            </ul>
+                                            <a href="javascript:;" class="title">INCEPTION</a>
+                                            <div class="entry-date"><span>16 July 2010</span></div>
+                                            <div class="social-links">
+                                                <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                                <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                                <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="entry-desc">  
+                                            <div class="row mh0">
+                                                <div class="col-md-2 col-sm-3 col-xs-12 comming_movie ph0">
+                                                    <img src="static/images/inceptionnnn.jpg" alt="movie">
+                                                </div>
+                                                <div class="col-md-8 col-sm-7 col-xs-12 entry-text phl3">
+                                                    <h3>Synopsis</h3>
+                                                    <p>Dom Cobb (Leonardo DiCaprio) is a thief with the rare ability to enter people's dreams and steal their secrets from their subconscious. His skill has made him a hot commodity in the world of corporate espionage but has also cost him everything he loves. Cobb gets a chance at redemption when he is offered a seemingly impossible task: Plant an idea in someone's mind. If he succeeds, it will be the perfect crime, but a dangerous enemy anticipates Cobb's every move.</p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                                    <div class="wpc-skills animated">
+                                                        <div class="skill-block">
+                                                            <h5 class="timer" data-to="90" data-speed="500">8.8 </h5>
+                                                            <h6> - IMDB</h6>
+                                                            <div class="skill-line">
+                                                                <div class="line-fill" data-width-pb="70%" style="width: 70%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-block">
+                                                            <h5 class="timer" data-to="86" data-speed="500"> 8.6 </h5>
+                                                            <h6> - Rotten Tomatoes</h6>
+                                                            <div class="skill-line">
+                                                                <div class="line-fill" data-width-pb="56%" style="width: 56%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skill-block">
+                                                            <h5 class="timer" data-to="74" data-speed="500"> 7.4 </h5>
+                                                            <h6> - Metacritic</h6>
+                                                            <div class="skill-line">
+                                                                <div class="line-fill" data-width-pb="56%" style="width: 56%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>           
+                                        </div>        
+                                    </article>
+                                </li>
+                                <li>
+                                        <article class="product-item hover-dark">
+                                                <div class="featured-image bg-cover">
+                                                     <img src="static/images/gravity.jpg" alt="image" />
+                                                     <a href="../static/video/gravity.mp4" class="video-player"><i class="fa fa-play"></i></a>
+                                                </div>
+                                                <div class="entry-title">
+                                                    <ul class="subtitle">
+                                                        <li>Drama</li>
+                                                        <li>Science-Fiction</li>
+                                                    </ul>
+                                                    <a href="javascript:;" class="title">GRAVITY</a>
+                                                    <div class="entry-date"><span>11 October 2013</span></div>
+                                                    <div class="social-links">
+                                                        <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                                        <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                                        <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="entry-desc">  
+                                                    <div class="row mh0">
+                                                        <div class="col-md-2 col-sm-3 col-xs-12 comming_movie ph0">
+                                                            <img src="static/images/ggravity.jpg" alt="movie">
+                                                        </div>
+                                                        <div class="col-md-8 col-sm-7 col-xs-12 entry-text phl3">
+                                                            <h3>Synopsis</h3>
+                                                            <p>Dr. Ryan Stone (Sandra Bullock) is a medical engineer on her first shuttle mission. Her commander is veteran astronaut Matt Kowalsky (George Clooney), helming his last flight before retirement. Then, during a routine space walk by the pair, disaster strikes: The shuttle is destroyed, leaving Ryan and Matt stranded in deep space with no link to Earth and no hope of rescue. As fear turns to panic, they realize that the only way home may be to venture further into space.</p>
+                                                        </div>
+                                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                                            <div class="wpc-skills animated">
+                                                                <div class="skill-block">
+                                                                    <h5 class="timer" data-to="80" data-speed="500">7.7 </h5>
+                                                                    <h6> - IMDB</h6>
+                                                                    <div class="skill-line">
+                                                                        <div class="line-fill" data-width-pb="70%" style="width: 70%;"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="skill-block">
+                                                                    <h5 class="timer" data-to="96" data-speed="500"> 9.6 </h5>
+                                                                    <h6> - Rotten Tomatoes</h6>
+                                                                    <div class="skill-line">
+                                                                        <div class="line-fill" data-width-pb="56%" style="width: 56%;"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="skill-block">
+                                                                    <h5 class="timer" data-to="96" data-speed="500"> 9.6 </h5>
+                                                                    <h6> - Metacritic</h6>
+                                                                    <div class="skill-line">
+                                                                        <div class="line-fill" data-width-pb="56%" style="width: 56%;"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>           
+                                                </div>        
+                                            </article>
+                                        </li>
+				    </ul>
+				</div>
+			</div>
+		</div>	
+		<div id="carousel_coming" class="flexslider">
+		   <ul class="slides">
+           			    <li class="thumb_item bg-cover">
+				    <div class="movie-image">
+                         <a href="#" class="btn fill">Interstellar</a>
+				    	<img src="/static/images/interstellar122.jpg" class="wpc_img" alt="image"/>
+	                    <div class="entry-desc">
+	                        <h3 class="entry-title">INTERSTELLAR</h3>
+                            <ul class="entry-date">
+                                <li>7 November 2014</li>  
+                           </ul>
+                        </div>
+                   </div>
+	            </li>
+            			    <li class="thumb_item bg-cover">
+				    <div class="movie-image">
+                         <a href="#" class="btn fill">AVATAR</a>
+				    	<img src="static/images/avatar.jpeg" class="wpc_img" alt="image"/>
+	                    <div class="entry-desc">
+	                        <h3 class="entry-title">AVATAR</h3>
+                            <ul class="entry-date">
+                                <li>18 December 2009</li>  
+                           </ul>
+                        </div>
+                   </div>
+	            </li>
+            	<li class="thumb_item bg-cover">
+				    <div class="movie-image">
+                         <a href="#" class="btn fill">THE NUN</a>
+				    	<img src="static/images/nunn.jpg" class="wpc_img" alt="image"/>
+	                    <div class="entry-desc">
+	                        <h3 class="entry-title">The NUN</h3>
+                            <ul class="entry-date">
+                                <li>7 September 2018</li>  
+                           </ul>
+                        </div>
+                   </div>
+	            </li>
+            			    <li class="thumb_item bg-cover">
+				    <div class="movie-image">
+                         <a href="#" class="btn fill">INCEPTION</a>
+				    	<img src="static/images/inception.jpg" class="wpc_img" alt="image"/>
+	                    <div class="entry-desc">
+	                        <h3 class="entry-title">INCEPTION</h3>
+                            <ul class="entry-date">
+                                <li>16 July 2010 </li>  
+                           </ul>
+                        </div>
+                   </div>
+	            </li>
+            	<li class="thumb_item bg-cover">
+				    <div class="movie-image">
+                         <a href="#" class="btn fill">GRAVITY</a>
+				    	<img src="static/images/gravityy.jpg" class="wpc_img" alt="image"/>
+	                    <div class="entry-desc">
+	                        <h3 class="entry-title">GRAVITY</h3>
+                            <ul class="entry-date">
+                                <li>11 October 20137</li>  
+                           </ul>
+                        </div>
+                   </div>
+	            </li>
+            </ul>
+	    </div>
+    </div>
+</div>                                                                                                                                                                                                                </div>   
+<!-- Footer -->
+<footer class="page-footer container-fluid text-right" style="padding:10px; background-color:#0c0c0c;">
+        <p class="love" style="font-weight:bold; color: #ffffff;">MADE WITH LOVE <i class="fa fa-heart" style="color:red;"></i></p>
+</footer>
+
+<!-- Overlay Search-->
+<div id="overlay-search">
+    <form method="POST" action="http://localhost:5000/">
+        <input type="text" name="s" placeholder="Search..." autocomplete="off" style="color:black;">
+        <button type="submit" name='searchbar' value="">
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
+    <a href="javascript:;" class="close-window"></a>
+</div>
+
+    <!-- Include jQuery and Scripts -->
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/packages.min.js"></script>
+    <script type="text/javascript" src="../static/js/scripts.min.js"></script>
+    
+</body>
+</html> 

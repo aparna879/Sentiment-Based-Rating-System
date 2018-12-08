@@ -1,0 +1,140 @@
+footer#footer{
+	background-color: @footer-bg;
+	overflow: hidden;
+	.footer-container{
+		padding-top: 110px;
+		padding-bottom: 110px;
+		border-bottom: 1px solid fade(#fff ,20%)
+	}
+	.footer-cp-text{
+		font-family: @sub-footer-font;
+		font-size: 12px;
+	}
+	.widget{
+		font-family: @footer-font-text;
+		font-size: @footer-text-size;
+		font-style: italic;
+		letter-spacing: 0.4px;
+		color: fade(@footer-color, 70%);
+		line-height: 1.5em;
+		margin-top: 15px; 
+		
+		.widget-title{
+			color: @footer-color;
+			font-style: normal;
+			text-transform: uppercase;
+			font-family: @footer-font-title;
+			font-size: @footer-title-size;
+			letter-spacing: 2px;
+			margin: 0px;
+			padding: 0px;
+			margin-bottom: 40px;
+			&:after { 
+			    content: '';
+			    display: block;
+			    width: 80px;
+			    height: 2px;
+			    background: #f44336;
+			    top: 20px;
+			    position: relative;
+			}
+		}
+		ul{
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+			font-size: 14px;
+			line-height: 28px;
+			letter-spacing: 0.7px;
+			li{
+
+				a{
+					color: fade(#fff, 60%);
+					font-family: @footer-font-text;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					text-decoration: none;
+					text-transform: capitalize;
+					.transition();
+					&:hover{
+						color:@brand-color;
+					};
+				}
+			}
+		}
+		p{
+			color: fade(#fff, 60%);
+			font-family: @footer-font-text;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 30px;
+		}
+		.social-links{
+			a{
+				display: inline-block;
+				font-size: 14px;
+				background-color: transparent;
+				color: #b0a7a7;
+				margin: 0px;
+				margin-right: 5px;
+				.transition();
+
+				&:hover{
+					color: #f44336;
+				}
+			}
+		}
+		button{
+			float: right;
+			color: #fff;
+			margin-top: 10px;
+			border: none;
+			border: 1px solid @brand-color;
+			.transition();
+			&:hover{
+					color: @brand-color;
+					background: transparent;
+					border: 1px solid @brand-color;
+				}
+		}
+		form{
+			padding-top: 10px;
+		}
+
+	}
+	.sub-footer{
+		background-color: @sub-footer-bg;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		text-align: center;
+		color: @sub-footer-color;
+
+		p{
+			font-family: @menu-font1;
+			font-size: 13px;
+			letter-spacing: 0px;
+		}
+
+		.social-links{
+			a{
+				font-size: 16px;
+				background-color: #fff;
+				color: #555555;
+				display: inline-block;
+				width: 42px;
+				height: 42px;
+				line-height: 42px;
+				border-radius: 50%;
+				text-align: center;
+				.transition();
+
+				&:hover{
+					background-color: @brand-color;
+					color: #111111;
+				}
+			}
+		}
+	}
+}
